@@ -43,8 +43,9 @@ sys_addnum(void)
     int num;
 
     argint(0, &num);
+    counter += num;
 
-    return counter+num ;
+    return counter;
 }
 
 int

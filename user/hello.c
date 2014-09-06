@@ -6,8 +6,8 @@
 int
 main(int argc, char *argv[])
 {
-  printf(1,"Hello world pid: %d\n", getpid());
-  printf(1,"Add Num 1: %d\n", addnum(1));
-  printf(1,"Add Num 3: %d\n", addnum(3));
+  printf(1, "counter = %d\n", addnum(3)); // prints "counter = 3"
+  printf(1, "counter = %d\n", addnum(2)); // prints "counter = 5"
+  printf(1, "counter = %d\n", addnum(9)); // prints "counter = 14"
   exit();
 }
