@@ -6,6 +6,8 @@
 #include "proc.h"
 #include "sysfunc.h"
 
+int counter;
+
 int
 sys_fork(void)
 {
@@ -33,6 +35,16 @@ sys_kill(void)
   if(argint(0, &pid) < 0)
     return -1;
   return kill(pid);
+}
+
+int 
+sys_addnum(void)
+{
+    int num;
+
+    argint(0, &num);
+
+    return counter+num ;
 }
 
 int
