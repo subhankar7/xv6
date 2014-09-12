@@ -13,6 +13,8 @@ struct {
 
 static struct proc *initproc;
 
+int counter;
+
 int nextpid = 1;
 extern void forkret(void);
 extern void trapret(void);

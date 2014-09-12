@@ -6,8 +6,6 @@
 #include "proc.h"
 #include "sysfunc.h"
 
-int counter;
-
 int
 sys_fork(void)
 {
